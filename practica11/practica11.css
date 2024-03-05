@@ -1,0 +1,44 @@
+
+  #menu, #contenedor {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  #encabezado,.pie{
+    width: 100%;
+  }
+
+  body{
+  height: 100vh;
+  }
+
+  #encabezado, .pie{
+    height: 8%;
+    background: greenyellow;
+  }
+
+  #menu{
+    height: 5%;
+    background: greenyellow;
+  }
+
+  #seccion, .articulo{
+  height: 95%;
+  }
+
+  .articulo{
+  width: 30%;
+  margin-right: 15px;
+  margin-left: 15px;
+  background: lightsteelblue;
+  }
+
+  #seccion{
+    width: 50%;
+    background: yellow;
+  }
+
+  #contenedor{
+    display: flex;
+    height: 65%;
+  }
