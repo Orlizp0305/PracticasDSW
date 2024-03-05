@@ -1,0 +1,51 @@
+nav, #contenedor {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  header,footer{
+    width: 100%;
+  }
+
+  body{
+  height: 100vh;
+  }
+
+  header, footer{
+    height: 8%;
+    background: green;
+  }
+
+  nav{
+    height: 5%;
+    background: green;
+  }
+
+  section, article, aside{
+  height: 95%;
+  }
+
+  aside{
+    width: 30%;
+    margin-right: 15px;
+    margin-left: 15px;
+    background: blue;
+  }
+
+  article{
+  width: 30%;
+  margin-right: 15px;
+  margin-left: 15px;
+  background: lavender;
+  }
+
+  section{
+    width: 50%;
+    background: pink;
+  }
+
+  #contenedor{
+    display: flex;
+    height: 65%;
+  }
+  
