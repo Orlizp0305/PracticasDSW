@@ -1,0 +1,32 @@
+p::first-line{color: rgb(208, 76, 255);}
+p::first-letter {text-transform: uppercase;}
+p::after{content: ".";}
+p::selection{background: pink;}
+
+tr:nth-child(2n)
+{
+    background: rgb(70%,15%,18%);
+}
+
+section p:nth-last-child(2n+1)
+{
+    background-color:blue ;
+}
+
+ul li
+{
+border-bottom: 1px dotted #000;
+font-size: 50px;
+}
+li:first-child
+{
+    border-top: 1px dotted AF0;
+    background-color: #AF0;
+    border-bottom: none;
+    list-style-type: square;
+}
+li:last-child
+{
+    color: #FF0;
+    list-style-type: square;
+}
