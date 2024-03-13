@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dias de la semana</h1>
+
+  <label for="dias">Ingrese los días de la semana separados por comas:</label>
+  <input type="text" id="dias" required><br><br>
+  
+  <button type="button" onclick="ejecutar()">Ejecutar</button>
+
+
+<script>
+var dias = [];
+
+function ejecutar() {
+  var diasI = document.getElementById('dias').value.split(',');
+  
+  dias = [];
+  
+  for (var i = 0; i < diasI.length; i++) {
+    dias.push(diasI[i].trim());
+  }
+  
+  alert("Los días capturados son: " + dias.join(", "));
+}
+</script>
+</body>
+</html>
