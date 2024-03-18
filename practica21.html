@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Peso en los planetas</h1>
+
+    <label for="peso">Peso a calcular: </label>
+    <input type="number" id="peso" required> <br><br>    
+
+    <p>Selecciona una opción:</p>
+    <select id="opc">
+        <option value="1">Tierra</option>
+        <option value="2">Marte</option>
+        <option value="3">Jupiter</option>
+    </select>
+    <button onclick="dale()">Mostrar</button>
+
+    <script>
+        function  dale(){
+        var peso = parseFloat(document.getElementById('peso').value);
+        const select = document.getElementById("opc").value;
+
+    switch(select) {
+        case "1":
+
+        alert ("Tu peso en la tierra es: " + peso);
+        break;
+    
+        case "2":
+        peso_marte = peso * .37;
+        alert ("Tu peso en marte es: " + peso_marte);
+        break;
+    
+        case "3":
+        peso_jupiter = (peso/9.81) * 24.79;
+        alert ("Tu peso en jupiter es: " + peso_jupiter);
+        break;
+
+        default:
+        alert("No existe esa opcion");
+        break;
+
+          }
+        }    
+    </script>
+</body>
+</html>
