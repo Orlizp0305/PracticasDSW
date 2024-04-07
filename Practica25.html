@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1,num2,operacion;
+        operacion = prompt("Ingrese la operacion matematica:");
+        num1 = parseFloat(prompt("Ingrese el primer numero: "));
+        num2 = parseFloat(prompt("Ingrese el segundo numero: "));
+
+        operacionesMatematicas(operacion,num1,num2);
+
+function operacionesMatematicas(operacion,num1,num2){
+
+    switch(operacion){
+        case 'suma': {
+            var suma = num1 + num2;
+            return alert("resultado es: "+ suma);
+            break;
+        }
+
+        case 'resta': {
+            var resta = num1 - num2;
+            return alert("resultado es: " +resta);
+            break;
+        }
+
+        case 'multiplicacion': {
+            var multi = num1 * num2;
+            return alert("resultado es: " + multi);
+            break;
+           
+        }
+
+        case 'division': {
+            var div = num1 / num2;
+            return  alert("resultado es: "+div);
+            break;
+        }
+
+        default: {
+            return alert("error");
+            break;
+        }
+    }
+
+     
+}
+    </script>
+</body>
+</html>
