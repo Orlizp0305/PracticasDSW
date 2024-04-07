@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Par o Impar</h1>
+    <p>Ingresa un número:</p>
+    <input type="number" id="num">
+
+    <button onclick="resultado()">Dale papi</button>
+    <p id="resultado"></p>
+
+    <script>
+         function resultado() {
+            const num = parseInt(document.getElementById("num").value);
+            if (isNaN(num)) {
+                document.getElementById("resultado").textContent = "error, captura un numero";
+            } else {
+                if (num % 2 === 0) {
+                    document.getElementById("resultado").textContent = "El numero "+num+ "es par.";
+                } else {
+                    document.getElementById("resultado").textContent = "El numero "+num+ "es impar.";
+                }
+            }
+        }
+        </script>
+</body>
+</html>
