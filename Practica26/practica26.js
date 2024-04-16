@@ -1,3 +1,9 @@
+//Funcion para juego nuevo
+  function Otro() {
+    window.open('practica27.html');
+  }
+
+
 //Creacion de arreglos donde guardaremos las respuestas y las imagenes.
 let maravillas = ["chichen-itza.svg", "coliseo.svg", "cristo-redentor.svg", "machu-picchu.svg", "muralla-china.svg","petra.svg","taj-mahal.svg"];
 let correcta = [1,0,2,1,2,0,1];

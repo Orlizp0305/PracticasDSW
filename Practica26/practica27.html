@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="parctica27.css">
+    <title></title>
+</head>
+<body>
+    <header>10 Personajes de Video juegos</header>
+    <h1>¿Qué personaje de video juego es?</h1>
+
+    <!-- Inicio -->
+    <div id="pantalla-inicial">
+        <p>¿A qué video juego pertenece la imagen?</p>
+         <!--Boton para comenzar el juego -->
+         <button class="btn" onclick="comenzarJuego()">JUGAR</button>
+          <!--Boton para regresar -->
+         <button class="btn" onclick="Regresar()">REGRESAR JUEGO VIEJO</button>
+    </div>
+
+    <!-- Pantalla juego -->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <!-- Muestra la imagen -->
+        <img src="img/Sub-zero.svg" alt="" id="imgPersonaje">
+        <div class="opciones">
+             <!--Boton para comprobar respuesta con la opcion 0 -->
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+             <!--Boton para comprobar respuesta con la opcion 1 -->
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+             <!--Boton para comprobar respuesta con la opcion 2 -->
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+            <!--Boton para comprobar respuesta con la opcion 3 -->
+            <div class="opcion" id="op3" onclick="comprobarRespuesta(3)">
+                <div class="letra" id="l3">D</div>
+                <div class="nombre" id="n3">OPCION C</div>
+            </div>
+        </div>
+    </div>
+    <!-- Pantalla final -->
+    <div id="pantalla-final">
+         <!--Resultados -->
+        <h2>CORRECTAS: <span id="numCorrectas">3</span></h2>
+        <h2>INCORRECTAS: <span id="numIncorrectas">2</span></h2>
+         <!--Boton para volver a iniciar -->
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+    </div>
+
+    
+     <!--Abre el string -->
+    <script src="practica27.js"></script>
+</body>
+</html>
