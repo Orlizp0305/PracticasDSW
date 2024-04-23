@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link rel="stylesheet" href="practica30.css">
+  </head>
+  <body>
+   <table cellspacing="18" border=0 id="tabla">
+     <tr>
+               <td>Nombres:<br>
+                 <input type="text" name="nombre" value="">
+               </td>
+               <td>Apellidos: <br>
+             <input type="text" name="apellido" value="">
+           </td>
+         </tr>
+         <tr>
+         <td>Edad: <br>
+                   <input type="number" name="edad" value="" min="18" max="60" required>
+                 </td>
+
+                 <td>Sexo: <br>
+           <select class="" name="sexo" required>
+             <option value="femenino">Femenino</option>
+             <option value="masculino">Masculino</option>
+             <option value="they">They</option>
+           </select>
+         </td>
+       </tr>
+                <tr>
+                  <td>
+                    Ciudad: <br>
+                    <select id="ciudad" onChange="habilitarTransporte()" required>
+                      <option value="tijuana">Tijuana</option>
+                      <option value="mexicali">Mexicali</option>
+                      <option value="rosarito">Rosarito</option>
+                      <option value="ensenada">Ensenada</option>
+                      <option value="tecate">Tecate</option>
+                      <option value="sanFelipe">San Felipe</option>
+                    </select>
+                  </td>
+                      <td>
+                        Celular: <br>
+                        <input type="number" name="" value="" required>
+                      </td>
+                    </tr>
+                    <tr>
+                  <td>
+                    Transporte: <br>
+                  <select class="" name="" id="transporte" required >
+                      <option value="no">No</option>
+                      <option value="si">Si</option>
+                    </select>
+                  </td>
+
+                  <td rowspan="2">
+                    Comentarios: <br>
+                     <textarea name="comentarios" rows="4" cols="17"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                       Camisa: <br>
+                    <select class="" id="camisa" onChange="aparecerCamisa()" required>
+                     <option value="si">Si</option>
+                     <option value="no">No</option>
+                   </select>
+                 </td>
+                </tr>
+                        <tr>
+                          <td>
+                             Tallas: <br>
+                          <id="filas"><select id="talla">
+                          <option value="S">S</option>
+                          <option value="L">L</option>
+                          <option value="M">M</option>
+                        </select>
+                       </td>
+                        </tr>
+                <tr>
+                  <td colspan="2">
+                    <input type="button" name="enviar" value="Enviar" id="enviar">
+                  </td>
+                </tr>
+              </form>
+         </tr>
+   </table>
+    <script>
+        function aparecerCamisa(){
+  let select= document.getElementById("camisa");
+  if (select.selectedIndex==1) {
+    let fila = document.getElementById("tabla").rows[5];
+    fila.style.display = "none";
+
+  }else {
+    fila = document.getElementById("tabla").rows[5];
+    fila.style.display = "table-row";
+
+  }
+}
+function habilitarTransporte(){
+  let ciudad = document.getElementById("ciudad");
+
+  if(ciudad.selectedIndex != 0){
+    document.getElementById("transporte").disabled = true;
+  }else {
+    document.getElementById("transporte").disabled = false;
+  }
+
+}
+
+    </script>
+ </body>
+</html>
